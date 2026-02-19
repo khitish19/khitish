@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khitish | Career Timeline</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <header class="profile-card">
+      <img
+        class="profile-photo"
+        src="https://ui-avatars.com/api/?name=Khitish&size=256&background=0f766e&color=fff"
+        alt="Khitish profile photo placeholder"
+      />
+      <div>
+        <p class="eyebrow">Data Science • AI • Optimization</p>
+        <h1>Khitish</h1>
+        <p class="bio">
+          Lead Data Scientist with experience across aviation, pharma, consumer durables,
+          and legal tech. Building practical AI systems that move from modeling to
+          business impact.
+        </p>
+        <div class="meta">
+          <a href="mailto:Sahukhitish19@gmail.com">Sahukhitish19@gmail.com</a>
+          <span>+971-585990461</span>
+          <a href="https://linkedin.com/in/khitish19" target="_blank" rel="noreferrer">LinkedIn</a>
+          <span>IIT Bombay • B.Tech Aerospace Engineering</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-header">
+        <h2>Career Timeline</h2>
+        <p>
+          Click a year, then a company, then a project to drill down from high-level career
+          progression into project-level details.
+        </p>
+      </section>
+      <section id="timeline" class="timeline" aria-live="polite"></section>
+    </main>
+
+    <template id="year-template">
+      <article class="timeline-year">
+        <button class="year-trigger" type="button"></button>
+        <div class="year-content"></div>
+      </article>
+    </template>
+
+    <template id="company-template">
+      <article class="company-card">
+        <button class="company-trigger" type="button"></button>
+        <div class="company-content"></div>
+      </article>
+    </template>
+
+    <template id="project-template">
+      <article class="project-card">
+        <button class="project-trigger" type="button"></button>
+        <div class="project-content"></div>
+      </article>
+    </template>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
