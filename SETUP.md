@@ -1,56 +1,74 @@
 # SETUP
 
-This project is a static web app that renders your profile and timeline from:
-- `RESUME.md`
-- `DETAILS.md`
+Modern React app (Vite + React 19 + Framer Motion) that renders your profile and career timeline.
 
-No build tooling is required.
+## Prerequisites
 
-## 1) Prerequisites
+- **Node.js 18+** (check with `node -v`)
+- **npm** (comes with Node)
 
-Install any one of the following:
-- **Python 3** (recommended), or
-- **Node.js** (for `npx serve`)
-
-## 2) Clone and open repo
+## Quick Start
 
 ```bash
+# 1. Clone and enter the repo
 git clone <your-repo-url>
 cd khitish_profile
+
+# 2. Install dependencies
+npm install
+
+# 3. Start the dev server
+npm run dev
 ```
 
-## 3) Run locally on localhost
+Open **http://localhost:5173** in your browser.
 
-### Option A: Python (recommended)
+## Edit Content
+
+All resume data lives in a single file:
+
+```
+src/data/resumeData.js
+```
+
+- **Add a new project**: add an object to the relevant company's `projects` array.
+- **Add a new company**: add an object to the `experience` array.
+- **Update skills**: edit the `skills` object.
+
+Save the file — Vite hot-reloads the page automatically.
+
+## Project Structure
+
+```
+├── index.html                 ← Vite entry point
+├── vite.config.js             ← Vite configuration
+├── package.json
+├── src/
+│   ├── main.jsx               ← React mount point
+│   ├── App.jsx                ← Root component
+│   ├── index.css              ← All styling (design tokens, glass panels, animations)
+│   ├── data/
+│   │   └── resumeData.js      ← All resume content (edit here)
+│   └── components/
+│       ├── Header.jsx         ← Profile card
+│       ├── Timeline.jsx       ← Year-grouped timeline
+│       ├── YearBlock.jsx      ← Expandable year section
+│       ├── CompanyCard.jsx    ← Expandable company section
+│       ├── ProjectCard.jsx    ← Expandable project with drill-down
+│       └── SkillsSection.jsx  ← Skills & tech stack
+├── RESUME.md                  ← Source resume (reference)
+├── DETAILS.md                 ← Source project details (reference)
+└── README.md                  ← Project goals
+```
+
+## Production Build
 
 ```bash
-python3 -m http.server 8000
+npm run build
+npm run preview   # preview the production build locally
 ```
 
-Open:
-- `http://localhost:8000`
+## Troubleshooting
 
-### Option B: Node.js
-
-```bash
-npx serve .
-```
-
-Open the localhost URL shown in terminal.
-
-## 4) Edit content
-
-The app reads data directly from markdown files, so updates are easy:
-- Update work experience bullets in `RESUME.md`
-- Add richer project drill-down details in `DETAILS.md`
-
-Refresh the browser to see changes.
-
-## 5) Troubleshooting
-
-- If the page is blank, ensure you are using a local server (do **not** open `index.html` directly as `file://`)
-- If a port is busy, run on another port, for example:
-
-```bash
-python3 -m http.server 5173
-```
+- If port 5173 is in use, Vite will auto-pick the next available port.
+- Clear browser cache if styles look stale after updates.
