@@ -1,10 +1,10 @@
-Khitish [Sahukhitish19@gmail.com](mailto:Sahukhitish19@gmail.com) | +971-585990461 | linkedIn/in/khitish19 
+Khitish [khitish19@gmail.com](mailto:khitish19@gmail.com) | +971-585990461 | linkedIn/in/khitish19 
 main phone number: +971-585990461
 
 Alternate phone number: +91-9167472461
 
 EDUCATION
-Indian Institute of Technology Bombay Mumbai, India | Aug 2014
+Indian Institute of Technology Bombay Mumbai, India
 B. Tech, Aerospace Engineering
 WORK EXPERIENCE
 
@@ -37,5 +37,5 @@ IPRIMEDATA | Data Scientist Delhi, India | May 2016 - Dec 2016
 
 **SKILLS**
 Languages and packages: Python, C++, SQL, MongoDB, pyspark, pytorch
-Cloud environment: AWS, GCP
-Interest Areas: Machine Learning, Deep Learning, Computer Vision, Statistical Modeling, Natural Language Processing (NLP)
+Cloud environment: AWS, GCP, Azure, Oracle Cloud
+Interest Areas: Machine Learning, Deep Learning, Computer Vision, Statistical Modeling, Natural Language Processing (NLP), Large Language Model (LLM), Agentic AI
