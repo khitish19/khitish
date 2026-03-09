@@ -4,8 +4,6 @@ const resumeData: ResumeData = {
   profile: {
     name: 'Khitish',
     title: 'Lead Data Scientist',
-    email: 'khitish19@gmail.com',
-    phone: '+971-585990461',
     linkedin: 'https://linkedin.com/in/khitish19',
     education: {
       institution: 'Indian Institute of Technology Bombay',

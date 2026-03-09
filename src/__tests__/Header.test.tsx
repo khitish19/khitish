@@ -6,8 +6,6 @@ import type { Profile } from '../types/resume';
 const mockProfile: Profile = {
   name: 'Test User',
   title: 'Data Scientist',
-  email: 'test@example.com',
-  phone: '+1-555-0100',
   linkedin: 'https://linkedin.com/in/testuser',
   education: {
     institution: 'MIT',
@@ -25,11 +23,11 @@ describe('Header', () => {
     expect(screen.getByText('Test User')).toBeInTheDocument();
   });
 
-  it('renders email as a mailto link', () => {
+  it('renders LinkedIn as a contact link', () => {
     render(<Header profile={mockProfile} />);
-    const emailLink = screen.getByText('test@example.com');
-    expect(emailLink).toBeInTheDocument();
-    expect(emailLink.closest('a')).toHaveAttribute('href', 'mailto:test@example.com');
+    const link = screen.getByText('Connect on LinkedIn');
+    expect(link).toBeInTheDocument();
+    expect(link.closest('a')).toHaveAttribute('href', 'https://linkedin.com/in/testuser');
   });
 
   it('renders the bio', () => {

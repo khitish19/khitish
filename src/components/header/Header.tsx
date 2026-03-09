@@ -1,4 +1,4 @@
-import { Mail, Phone, Linkedin, GraduationCap } from 'lucide-react';
+import { Linkedin, GraduationCap } from 'lucide-react';
 import { GlassPanel } from '../ui/GlassPanel';
 import type { Profile } from '../../types/resume';
 
@@ -27,19 +27,6 @@ export function Header({ profile }: HeaderProps) {
           </h1>
           <div className="mt-2 mb-3 flex flex-wrap gap-y-2 gap-x-4 text-muted text-sm max-md:justify-center">
             <span className="flex items-center gap-1.5">
-              <Mail className="w-3.5 h-3.5" />
-              <a
-                href={`mailto:${profile.email}`}
-                className="text-link hover:text-accent transition-colors no-underline hover:underline"
-              >
-                {profile.email}
-              </a>
-            </span>
-            <span className="flex items-center gap-1.5">
-              <Phone className="w-3.5 h-3.5" />
-              {profile.phone}
-            </span>
-            <span className="flex items-center gap-1.5">
               <Linkedin className="w-3.5 h-3.5" />
               <a
                 href={profile.linkedin}
@@ -47,7 +34,7 @@ export function Header({ profile }: HeaderProps) {
                 rel="noreferrer"
                 className="text-link hover:text-accent transition-colors no-underline hover:underline"
               >
-                LinkedIn
+                Connect on LinkedIn
               </a>
             </span>
             <span className="flex items-center gap-1.5">

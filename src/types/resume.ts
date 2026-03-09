@@ -8,8 +8,6 @@ export interface Education {
 export interface Profile {
   name: string;
   title: string;
-  email: string;
-  phone: string;
   linkedin: string;
   education: Education;
   bio: string;
