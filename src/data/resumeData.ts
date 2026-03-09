@@ -49,7 +49,7 @@ const resumeData: ResumeData = {
     },
     {
       company: 'MCKINSEY & COMPANY',
-      role: 'Junior Principal, Data Science (QuantumBlack)',
+      role: 'Junior Principal, Data Science (QuantumBlack, AI by Mckinsey)',
       location: 'Bangalore, India',
       dateRange: 'Nov 2021 – Sep 2025',
       startYear: 2021,
