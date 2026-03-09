@@ -30,6 +30,7 @@ export interface Experience {
   dateRange: string;
   startYear: number;
   endYear: number | null;
+  summary: string | null;
   projects: Project[];
 }
 

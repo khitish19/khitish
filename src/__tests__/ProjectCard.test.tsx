@@ -24,11 +24,8 @@ describe('ProjectCard', () => {
     expect(screen.getByText('Test Project')).toBeInTheDocument();
   });
 
-  it('expands on click to show description and tech tags', async () => {
-    const user = userEvent.setup();
+  it('shows description and tech tags without clicking', () => {
     render(<ProjectCard project={mockProject} />);
-
-    await user.click(screen.getByRole('button'));
 
     expect(screen.getByText('A test project description.')).toBeInTheDocument();
     expect(screen.getByText('Python')).toBeInTheDocument();
@@ -36,22 +33,18 @@ describe('ProjectCard', () => {
     expect(screen.getByText('AWS')).toBeInTheDocument();
   });
 
-  it('shows fallback when details is null', async () => {
-    const user = userEvent.setup();
+  it('does not show Deep Dive button when details is null', () => {
     render(<ProjectCard project={mockProject} />);
 
-    await user.click(screen.getByRole('button'));
-
-    expect(screen.getByText(/Detailed drill-down/)).toBeInTheDocument();
+    expect(screen.queryByText('Deep Dive')).not.toBeInTheDocument();
   });
 
-  it('shows Deep Dive section when details exist', async () => {
+  it('shows Deep Dive section on click when details exist', async () => {
     const user = userEvent.setup();
     render(<ProjectCard project={mockProjectWithDetails} />);
 
     await user.click(screen.getByRole('button'));
 
-    expect(screen.getByText('Deep Dive')).toBeInTheDocument();
     expect(screen.getByText('Situation')).toBeInTheDocument();
   });
 });

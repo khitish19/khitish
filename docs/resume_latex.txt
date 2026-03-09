@@ -1,0 +1,115 @@
+\documentclass[]{resume-openfont}
+
+\pagestyle{fancy}
+\resetHeaderAndFooter
+
+% Tighter spacing to fit 1 page
+\renewcommand{\sectionsep}{\vspace{2pt}}
+
+%--------------------------------------------------------------
+% Convenience command - make it easy to fill template
+
+% Create job position command. Parameters: company, position, location, when
+% Company on first line (bold, no uppercase), role + location on second line
+\newcommand{\resumeHeading}[4]{%
+\runsubsection{#1}\hfill\location{#3 | #4}\\
+{\small\textsl{#2}}\fakeNewLine}
+
+% Create education heading. Parameters: Name, degree, location, when
+\newcommand{\educationHeading}[4]{\runsubsection{#1}\hspace*{\fill}  \location{#3 | #4}\\
+{\small\textsl{#2}}\fakeNewLine}
+
+% Create project heading. Parameters: Name, link, Tech stack
+\newcommand{\projectHeading}[3]{\Project{#1}{#2}
+\descript{#3}\\}
+
+\newcommand{\projectHeadingWithDate}[4]{\Project{#1}{#2}
+\descript{#3 | #4}\\}
+
+% Parameters: courses
+\newcommand{\courseWork}[1]{\textbf{Coursework:} #1}
+
+% Parameters: courses
+\newcommand{\teacherAssistant}[1]{\textbf{Teacher Assistant (TA):} #1}
+
+%--------------------------------------------------------------
+\begin{document}
+
+%--------------------------------------------------------------
+%     Profile
+%--------------------------------------------------------------
+\newcommand{\yourName}{Khitish Sahu}
+\newcommand{\yourEmail}{khitish19@gmail.com}
+\newcommand{\yourPhone}{+971-585990461 | +91-9167472461}
+\newcommand{\linkedInUserName}{in/khitish19}
+
+\begin{center}
+    \Huge \scshape \latoRegular{\yourName} \\ \vspace{1pt}
+    \small \href{mailto:\yourEmail}{\underline{\yourEmail}}  $|$  \yourPhone $|$
+    \href{https://www.linkedin.com/in/\linkedInUserName}{\underline{linkedIn/\linkedInUserName}}
+\end{center}
+
+%--------------------------------------------------------------
+%     Education
+%--------------------------------------------------------------
+\section{Education}
+\educationHeading{Indian Institute of Technology Bombay}{B. Tech, Aerospace Engineering}{Mumbai, India}
+\sectionsep
+
+\section{Professional Summary}
+Data Scientist with 9+ years of experience building production AI/ML systems delivering measurable business impact across \textbf{life sciences}, manufacturing, consumer electronics, aviation, and legal tech. Specializes in integrating explainable machine learning with optimization to create production decision systems. Current focus: the intersection of traditional machine learning and optimization with modern Generative AI, LLMs, and agentic systems.
+\sectionsep
+
+%--------------------------------------------------------------
+%     Experience
+%--------------------------------------------------------------
+\section{Work Experience}
+
+\resumeHeading{Contango, AI by Abu Dhabi Developmental Holding Company}{Lead Data Scientist}{Abu Dhabi, UAE}{Sep 2025 – Current}
+\begin{bullets}
+    \item \textbf{\textasciitilde 100 Mn AED projected impact over 5 years} by building an AI-powered aviation spare parts inventory optimization platform combining aviation specific knowledge and ML forecasting models. Developed an end-to-end system spanning ML models (tree + linear regression), Python backend, and JS frontend.
+\end{bullets}
+\sectionsep
+
+\resumeHeading{McKinsey \& Company}{Junior Principal, Data Science (QuantumBlack, AI by McKinsey)}{Bangalore, India}{Nov 2021 – Sep 2025}
+\begin{bullets}
+    \item \textbf{Reduced anode rejection by \textasciitilde 20\% in 6 months} by deploying an AI + GenAI operations optimization platform for a leading aluminium producer integrating data engineering pipelines, ML models, and LLM-based alerting.
+    \item \textbf{Improved physician engagement by \textasciitilde15\%} by building explainable ML models and mixed-integer optimization to generate data-driven call plans for pharmaceutical sales teams across three clients.
+    \item Developed explainable AI models to optimize biologics manufacturing process parameters for key quality attributes, achieving \textbf{FDA-approved quality standards} using tree-based models and genetic optimization.
+    \item Prototyped deep learning sequence models (RNN/LSTM) to map healthcare providers’ prescribing journeys, later incorporated into the firm's in-house AI platform for pharmaceutical analytics.
+\end{bullets}
+\sectionsep
+
+\resumeHeading{LG Electronics}{Deputy Manager, Business Analytics \& Big Data}{Delhi, India}{Dec 2018 - Oct 2021}
+\begin{bullets}
+    \item \textbf{Improved SKU-level demand forecasting accuracy by \textasciitilde30\%} by deploying an ensemble of LSTM and Amazon Forecast models across multiple consumer electronics product lines.
+    \item Built an in-house \textbf{computer vision pipeline} (YOLO, DeepSort, AlignedReID, Amazon Rekognition) to extract consumer behavior insights from brand store camera feeds.
+    \item Developed ML-based customer targeting models (XGBoost, Google AutoML, RFM segmentation) for multiple festival and product launch campaigns.
+\end{bullets}
+\sectionsep
+
+\resumeHeading{\href{https://www.casemine.com/}{Casemine, Gauge Data Solutions}}{Data Scientist}{Delhi, India}{Jan 2017 - Nov 2018}
+\begin{bullets}
+    \item Improved legal document search relevance by integrating SVD with Elasticsearch, increasing lawyer engagement metrics.
+    \item Built a CRF-based entity recognition model to automatically identify case titles in legal documents, fully automating a previously manual tagging process.
+\end{bullets}
+\sectionsep
+
+\resumeHeading{iPrimeData}{Data Scientist}{Delhi, India}{May 2016 - Dec 2016}
+\sectionsep
+
+%--------------------------------------------------------------
+%     Skills
+%--------------------------------------------------------------
+\section{Skills}
+\begin{skillList}
+    \singleItem{ML/AI:}{Machine Learning, Deep Learning, Explainable AI, Optimization, Computer Vision, NLP}
+    \\
+    \singleItem{GenAI:}{Generative AI, LLMs, Agentic AI, RAG Pipelines, Prompt Engineering}
+    \quad
+    \singleItem{Tools:}{Python, PyTorch, SQL, PySpark, MongoDB}
+    \\
+    \singleItem{Platforms:}{AWS, GCP, Azure, Oracle Cloud, Databricks}
+\end{skillList}
+
+\end{document}

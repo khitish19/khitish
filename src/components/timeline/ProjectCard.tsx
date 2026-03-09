@@ -10,54 +10,50 @@ interface ProjectCardProps {
 }
 
 export function ProjectCard({ project }: ProjectCardProps) {
-  const [open, setOpen] = useState(false);
+  const [detailsOpen, setDetailsOpen] = useState(false);
 
   return (
     <GlassPanel
       as="article"
-      className="overflow-hidden transition-colors hover:border-purple-500/25 hover:shadow-sm"
+      className="overflow-hidden border-purple-500/15 hover:border-purple-500/25 transition-colors"
     >
-      <button
-        className="w-full flex justify-between items-center gap-3 border-0 px-3.5 py-2.5 text-text-primary bg-purple-500/[0.06] text-left cursor-pointer font-[inherit] text-sm transition-colors hover:bg-purple-500/[0.12]"
-        type="button"
-        onClick={() => setOpen((v) => !v)}
-        aria-expanded={open}
-      >
-        <span className="font-semibold">{project.title}</span>
-        <ChevronIcon open={open} className="w-4 h-4" />
-      </button>
+      <div className="px-3.5 py-3">
+        <h4 className="font-semibold text-sm text-text-primary mb-1.5">{project.title}</h4>
+        <p className="text-text-secondary text-sm leading-relaxed mb-3">{project.description}</p>
 
-      <ExpandableSection open={open} duration={0.28}>
-        <div className="px-3.5 pb-3.5 pt-1">
-          <p className="text-text-secondary text-sm leading-relaxed mb-3">{project.description}</p>
-
-          {project.technologies.length > 0 && (
-            <div className="flex flex-wrap gap-1.5 mb-3">
-              {project.technologies.map((tech) => (
-                <span
-                  className="inline-block bg-sky-500/10 text-link border border-sky-500/20 rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors hover:bg-sky-500/15 hover:text-sky-200"
-                  key={tech}
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
-          )}
-
-          {project.details ? (
-            <div className="mt-2 p-3.5 bg-white/[0.03] border border-border-subtle rounded-lg text-[0.85rem] leading-relaxed">
-              <span className="block text-xs font-bold uppercase tracking-widest text-accent mb-2">
-                Deep Dive
+        {project.technologies.length > 0 && (
+          <div className="flex flex-wrap gap-1.5 mb-2">
+            {project.technologies.map((tech) => (
+              <span
+                className="inline-block bg-sky-500/10 text-link border border-sky-500/20 rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors hover:bg-sky-500/15 hover:text-sky-200"
+                key={tech}
+              >
+                {tech}
               </span>
-              {renderDetails(project.details)}
-            </div>
-          ) : (
-            <p className="text-muted text-sm italic">
-              Detailed drill-down for this project will be expanded as more details are added.
-            </p>
-          )}
-        </div>
-      </ExpandableSection>
+            ))}
+          </div>
+        )}
+
+        {project.details && (
+          <>
+            <button
+              className="mt-2 flex items-center gap-1.5 text-xs font-semibold text-accent hover:text-teal-300 transition-colors cursor-pointer bg-transparent border-0 p-0 font-[inherit]"
+              type="button"
+              onClick={() => setDetailsOpen((v) => !v)}
+              aria-expanded={detailsOpen}
+            >
+              <span>Deep Dive</span>
+              <ChevronIcon open={detailsOpen} className="w-3.5 h-3.5" />
+            </button>
+
+            <ExpandableSection open={detailsOpen} duration={0.28}>
+              <div className="mt-2 p-3.5 bg-white/[0.03] border border-border-subtle rounded-lg text-[0.85rem] leading-relaxed">
+                {renderDetails(project.details)}
+              </div>
+            </ExpandableSection>
+          </>
+        )}
+      </div>
     </GlassPanel>
   );
 }

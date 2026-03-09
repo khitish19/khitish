@@ -25,11 +25,7 @@ export function Header({ profile }: HeaderProps) {
           <h1 className="text-3xl max-sm:text-2xl font-extrabold mt-1 mb-1.5 bg-gradient-to-r from-teal-400 to-sky-400 bg-clip-text text-transparent">
             {profile.name}
           </h1>
-          <p className="text-text-secondary max-w-[65ch] text-[0.95rem] leading-relaxed">
-            {profile.bio}
-          </p>
-
-          <div className="mt-3 flex flex-wrap gap-y-2 gap-x-4 text-muted text-sm max-md:justify-center">
+          <div className="mt-2 mb-3 flex flex-wrap gap-y-2 gap-x-4 text-muted text-sm max-md:justify-center">
             <span className="flex items-center gap-1.5">
               <Mail className="w-3.5 h-3.5" />
               <a
@@ -58,6 +54,12 @@ export function Header({ profile }: HeaderProps) {
               <GraduationCap className="w-3.5 h-3.5" />
               {profile.education.institution} · {profile.education.degree}
             </span>
+          </div>
+
+          <div className="text-text-secondary text-[0.88rem] leading-relaxed space-y-2">
+            {profile.bio.split('\n\n').map((paragraph, i) => (
+              <p key={i}>{paragraph}</p>
+            ))}
           </div>
         </div>
       </div>

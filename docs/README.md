@@ -20,5 +20,6 @@ Initially let’s develop this inside this repo and later we will deploy it some
 
 Files to use:
 1. The README.md file is anchor for this website
-2. RESUME.md is the file with all the resume points. This will be a live document to update the resume and the content.
-3. DETAILS.md file will hold details for projects. It might not have all the details but for some projects it will hold all the details
+2. RESUME_DRAFT.md is the file with all the resume points. This will be a live document to update the resume and the content.
+3.LINKEDIN_DRAFT.md is a file where I have written summary for a particular comanies and my professional summary which I have shown in linkedin
+3. DETAILS.md file will hold details for projects. We will use it later for detailing a project.

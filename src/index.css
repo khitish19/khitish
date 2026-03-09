@@ -4,12 +4,12 @@
 @theme {
   --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
 
-  --color-bg: #060b13;
-  --color-bg-surface: #0d1624;
-  --color-panel: rgba(13, 22, 36, 0.72);
-  --color-panel-hover: rgba(18, 30, 50, 0.85);
-  --color-border-subtle: rgba(148, 163, 184, 0.12);
-  --color-border-accent: rgba(45, 212, 191, 0.3);
+  --color-bg: #0f172a;
+  --color-bg-surface: #1e293b;
+  --color-panel: rgba(30, 41, 59, 0.72);
+  --color-panel-hover: rgba(51, 65, 85, 0.85);
+  --color-border-subtle: rgba(148, 163, 184, 0.18);
+  --color-border-accent: rgba(45, 212, 191, 0.35);
   --color-text-primary: #e2e8f0;
   --color-text-secondary: #cbd5e1;
   --color-muted: #94a3b8;

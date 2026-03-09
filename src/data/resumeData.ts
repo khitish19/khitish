@@ -13,8 +13,8 @@ const resumeData: ResumeData = {
       location: 'Mumbai, India',
       year: 2014,
     },
-    bio: 'Lead Data Scientist with experience across aviation, pharma, consumer durables, and legal tech. Building practical AI systems that move from modeling to business impact.',
-    tags: ['Data Science', 'AI', 'Optimization', 'Machine Learning', 'Deep Learning'],
+    bio: 'Data Scientist with 9+ years of experience building production AI/ML systems with measurable business impact. My work has spanned pharmaceutical, manufacturing, consumer electronics, aviation, and legal tech domain across US, Europe, and the Middle East region.\n\nI began my career working on Natural Language Processing (NLP) and information retrieval at a legal-tech startup, then moved to LG Electronics primarily working on demand forecasting and computer vision related problems. I spent nearly four years at McKinsey\'s QuantumBlack practice, leading data science workstreams for pharmaceutical and manufacturing clients focused on integrating explainable machine learning models with optimization modules to derive actionable and practical production solution.\n\nCurrently, I am part of Data & AI function at Contango, the AI arm of Abu Dhabi Developmental Holding Company serving multiple portfolio companies to develop their AI capabilities. I am particularly focused on the intersection of traditional ML with Generative AI, LLMs, and Agentic AI, integrating these into production systems to augment decision-making and drive automation at scale.',
+    tags: ['Data Scientist', '9+ Years', 'AI/ML', 'Life Science', 'Manufacturing', 'Consumer Electronics', 'Legal Tech', 'Aviation'],
   },
 
   skills: {
@@ -37,11 +37,13 @@ const resumeData: ResumeData = {
       dateRange: 'Sep 2025 – Current',
       startYear: 2025,
       endYear: null,
+      summary:
+        'Leading the data science work-stream across aviation clients, building AI-powered solutions end-to-end — from ML models to full-stack application development.',
       projects: [
         {
           title: 'AI Powered Inventory Management',
           description:
-            'Developed AI models to optimize the procurement of spare parts in aviation industry. Developed an end-to-end web application to manage and procure inventory in high cost aviation industry. The solution has an estimated impact of ~200 Mn AED over the next 5 years.',
+            '~100 Mn AED projected impact over 5 years — Built an AI-powered aviation spare parts inventory optimization platform combining ML forecasting models with aviation-specific domain knowledge. Developed the end-to-end system spanning ML models (tree + linear regression), Python backend, and JS frontend.',
           technologies: ['Tree + Linear Regression Models', 'Python Backend', 'JS Frontend'],
           details: null,
         },
@@ -49,23 +51,25 @@ const resumeData: ResumeData = {
     },
     {
       company: 'MCKINSEY & COMPANY',
-      role: 'Sr. Data Scientist, QuantumBlack',
+      role: 'Junior Principal, Data Science (QuantumBlack)',
       location: 'Bangalore, India',
       dateRange: 'Nov 2021 – Sep 2025',
       startYear: 2021,
       endYear: 2025,
+      summary:
+        '~4 years at QuantumBlack working for pharmaceutical and manufacturing clients across US, Europe, and Middle East. Some of the hardest problems with huge practical ramifications.',
       projects: [
         {
           title: 'Anode Optimization Platform',
           description:
-            'Designed and deployed an AI-powered anode optimization platform for a leading global aluminium producer, integrating data engineering, data science, and GenAI pipelines to identify critical kiln baking parameters and proactively alert maintenance planners, driving an estimated 20% reduction in anode rejection over 6 months.',
+            '~20% reduction in anode rejection in 6 months — Designed an AI + GenAI operations optimization platform for a global aluminium producer, integrating data engineering pipelines, ML models, and LLM-based alerting for maintenance planners.',
           technologies: ['Tree-based Models', 'SHAP', 'OpenAI / GenAI', 'Databricks'],
           details: null,
         },
         {
           title: 'Digital Transformation – Pharma Engagement',
           description:
-            'Developed and deployed end-to-end AI solutions to create data-driven engagement plans for medical representatives. Built explainable ML models and optimization modules to generate effective call plans. The AI-driven strategy resulted in a 14% lift in engagement across two indications over 6 months.',
+            '~15% improvement in physician engagement — Built explainable ML models and mixed-integer optimization to generate data-driven call plans for pharmaceutical sales teams, replacing intuition-based planning across three clients.',
           technologies: ['Tree-based Models', 'SHAP', 'Mixed Integer Optimization'],
           details: `### Situation
 The client, a pharmaceutical company, wanted to improve how their medical representatives (MRs) engaged with healthcare providers (HCPs). Traditionally, call plans were designed based on experience and intuition, leading to inefficiencies, missed high-value prescribers, and suboptimal resource allocation.
@@ -90,8 +94,8 @@ The client, a pharmaceutical company, wanted to improve how their medical repres
         {
           title: 'Process Optimization – Biologics Manufacturing',
           description:
-            "Developed explainable AI models to identify and optimize process parameters impacting key quality attributes at a pharma client's biologics manufacturing plant. Collaborated with stakeholders to implement changes based on model insights and achieved FDA-approved quality standards for drug approval.",
-          technologies: ['Deep Learning', 'Tree-based Models', 'SHAP', 'Genetic Optimization'],
+            'Achieved FDA-approved quality standards — Developed explainable AI models to identify and optimize process parameters impacting key quality attributes at a biologics manufacturing plant, using tree-based models and genetic optimization.',
+          technologies: ['Tree-based Models', 'SHAP', 'Genetic Optimization'],
           details: `### Situation
 A biopharma client needed to ensure FDA-approved quality standards for a critical biologics manufacturing process. Key quality attributes (KQAs) such as protein yield and purity were influenced by complex process parameters. Existing optimization relied heavily on domain expertise and manual experimentation.
 
@@ -114,7 +118,7 @@ A biopharma client needed to ensure FDA-approved quality standards for a critica
         {
           title: 'Healthcare Provider Journey Prototype',
           description:
-            "Conceptualized and developed the first prototype to understand health care providers' journey across different stages for prescribing a drug. The solution involved modeling a sequence of events using deep learning methodologies.",
+            'Prototyped deep learning sequence models (RNN/LSTM) to map how healthcare providers progress through prescribing journeys, later incorporated into the firm\'s in-house AI platform for pharmaceutical analytics.',
           technologies: ['Deep Learning', 'RNN', 'LSTM'],
           details: null,
         },
@@ -127,18 +131,20 @@ A biopharma client needed to ensure FDA-approved quality standards for a critica
       dateRange: 'Dec 2018 – Oct 2021',
       startYear: 2018,
       endYear: 2021,
+      summary:
+        'Built end-to-end ML systems at scale in a large enterprise. Three years of working cross-functionally, handling messy enterprise data, and building solutions that non-technical teams actually adopt.',
       projects: [
         {
           title: 'Demand Forecasting',
           description:
-            'Developed SKU level forecasting to support demand planning for multiple consumer durables. Model was an ensemble of Deep Learning based LSTM and automated modules developed on the Amazon Forecast API. The final model improved forecasting accuracy by an average of 30%.',
+            '~30% improvement in SKU-level forecasting accuracy — Deployed an ensemble of LSTM and Amazon Forecast models across multiple consumer electronics product lines to support demand planning.',
           technologies: ['LSTM', 'Amazon Forecast API', 'Ensemble Methods'],
           details: null,
         },
         {
           title: 'Brand Shop Video Analytics',
           description:
-            'Developed in-house end-to-end prototype to generate shop-level consumer insights based on camera feeds. Utilized multiple cutting edge computer vision algorithms including Custom Object Detection (YOLO), Person Tracking and Re-Identification (Deep-Sort, AlignedReID), and Amazon Rekognition API.',
+            'Built an in-house computer vision pipeline from scratch to extract consumer behavior insights from brand store camera feeds, using YOLO for detection, DeepSort for tracking, and person re-identification for cross-camera analytics.',
           technologies: [
             'YOLO',
             'Deep-Sort',
@@ -151,7 +157,7 @@ A biopharma client needed to ensure FDA-approved quality standards for a critica
         {
           title: 'Campaign Target Planning',
           description:
-            'Developed customer targeting modules to support campaigns around Indian festivals, special offers, and new product introduction. The module consists of Machine Learning based targeting (XGBoost/Google AutoML) and rules based on RFM segments.',
+            'Developed ML-based customer targeting models for multiple festival and product launch campaigns, combining XGBoost and Google AutoML with RFM segmentation rules.',
           technologies: ['XGBoost', 'Google AutoML', 'RFM Segmentation'],
           details: null,
         },
@@ -164,18 +170,20 @@ A biopharma client needed to ensure FDA-approved quality standards for a critica
       dateRange: 'Jan 2017 – Nov 2018',
       startYear: 2017,
       endYear: 2018,
+      summary:
+        'Dived deep into NLP at a legal-tech startup — improving search quality and automating manual workflows using ML models integrated into a full-fledged Java application.',
       projects: [
         {
           title: 'Search Enhancement on Legal Documents',
           description:
-            "Integrated Singular Value Decomposition (SVD) with baseline Elasticsearch to improve quality of search results. The implementation significantly improved lawyers' engagement metrics with the product.",
+            'Improved legal document search relevance by integrating SVD with Elasticsearch, increasing lawyer engagement metrics with the product.',
           technologies: ['SVD', 'Elasticsearch', 'NLP'],
           details: null,
         },
         {
           title: 'Legal Case Title Identifier',
           description:
-            'Implemented a Conditional Random Field (CRF) model to identify case titles (Entity Recognition) cited in legal documents which completely automated the process of manual tagging of case references.',
+            'Built a CRF-based entity recognition model to automatically identify case titles in legal documents, fully automating a previously manual tagging process.',
           technologies: ['CRF', 'Entity Recognition', 'NLP'],
           details: null,
         },
@@ -188,11 +196,12 @@ A biopharma client needed to ensure FDA-approved quality standards for a critica
       dateRange: 'May 2016 – Dec 2016',
       startYear: 2016,
       endYear: 2016,
+      summary: null,
       projects: [
         {
           title: 'Sentiment Analysis – US Presidential Election',
           description:
-            'Supported an NGO to analyse data from Twitter to assess sentiments for all the presidential candidates in 2016 election. The analysis informed them on popularity of candidates, their support geographies, and sentiments carried out by major media outlets.',
+            'Analysed Twitter data for an NGO to assess sentiments for presidential candidates in the 2016 election — tracking popularity, support geographies, and media outlet sentiment.',
           technologies: ['Sentiment Analysis', 'Twitter API', 'NLP'],
           details: null,
         },
