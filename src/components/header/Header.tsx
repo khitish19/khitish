@@ -11,9 +11,9 @@ export function Header({ profile }: HeaderProps) {
     <GlassPanel as="header" className="relative overflow-hidden mb-5">
       <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-teal-400 to-sky-500 rounded-t-2xl" />
 
-      <div className="grid grid-cols-[120px_1fr] gap-5 p-5 max-md:grid-cols-1 max-md:text-center">
+      <div className="flex items-start gap-5 p-5 max-md:flex-col max-md:items-center max-md:text-center">
         <img
-          className="w-[120px] h-[120px] rounded-xl object-cover border-2 border-border-accent shadow-[0_0_20px_rgba(45,212,191,0.15)] transition-all duration-300 hover:scale-[1.04] hover:shadow-[0_0_30px_rgba(45,212,191,0.25)] max-md:w-24 max-md:h-24 max-md:mx-auto"
+          className="w-[120px] h-[120px] shrink-0 rounded-xl object-cover border-2 border-border-accent shadow-[0_0_20px_rgba(45,212,191,0.15)] transition-all duration-300 hover:scale-[1.04] hover:shadow-[0_0_30px_rgba(45,212,191,0.25)] max-md:w-24 max-md:h-24"
           src={`https://ui-avatars.com/api/?name=${encodeURIComponent(profile.name)}&size=256&background=0f766e&color=fff&bold=true`}
           alt={`${profile.name} profile photo`}
         />
