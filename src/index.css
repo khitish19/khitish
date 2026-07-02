@@ -1,23 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
 @import 'tailwindcss';
 
 @theme {
-  --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-sans: 'Space Grotesk', ui-sans-serif, system-ui, -apple-system, sans-serif;
 
-  --color-bg: #0b1120;
-  --color-bg-surface: #162032;
-  --color-panel: rgba(22, 32, 50, 0.78);
-  --color-panel-hover: rgba(40, 56, 82, 0.88);
-  --color-border-subtle: rgba(148, 163, 184, 0.12);
-  --color-border-accent: rgba(56, 224, 200, 0.4);
-  --color-text-primary: #f1f5f9;
-  --color-text-secondary: #cbd5e1;
-  --color-muted: #8b9cb8;
-  --color-accent: #38e0c8;
-  --color-accent-dim: rgba(56, 224, 200, 0.12);
-  --color-accent-2: #38bdf8;
-  --color-accent-2-dim: rgba(56, 189, 248, 0.1);
-  --color-link: #7dd3fc;
+  --color-bg: #ffffff;
+  --color-bg-surface: #f8fafc;
+  --color-panel: rgba(255, 255, 255, 0.72);
+  --color-panel-hover: rgba(255, 255, 255, 0.92);
+  --color-border-subtle: rgba(15, 23, 42, 0.08);
+  --color-border-accent: rgba(79, 70, 229, 0.4);
+  --color-text-primary: #0f172a;
+  --color-text-secondary: #334155;
+  --color-muted: #64748b;
+  --color-accent: #4f46e5;
+  --color-accent-dim: rgba(79, 70, 229, 0.08);
+  --color-accent-2: #0ea5e9;
+  --color-accent-2-dim: rgba(14, 165, 233, 0.08);
+  --color-link: #4f46e5;
 }
 
 @keyframes orbFloat {

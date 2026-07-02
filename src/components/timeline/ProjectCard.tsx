@@ -47,7 +47,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
             </button>
 
             <ExpandableSection open={detailsOpen} duration={0.28}>
-              <div className="mt-2 p-3.5 bg-white/[0.03] border border-border-subtle rounded-lg text-[0.85rem] leading-relaxed">
+              <div className="mt-2 p-3.5 bg-bg-surface border border-border-subtle rounded-lg text-[0.85rem] leading-relaxed">
                 {renderDetails(project.details)}
               </div>
             </ExpandableSection>
